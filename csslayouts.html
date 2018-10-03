@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Oblig 2 - CSS layouts</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="stilark.css" />
+
+</head>
+<body>
+
+    <div class="main-wrapper">
+
+    <header id="headerSection">
+        <h1>Oblig 2</h1> 
+    </header>
+
+    <nav id="navSection">
+        <div id="navParent">
+            <a class="navChild" href="index.html">Hjem</a>
+            <a class="navChild" href="github.html">Github</a>
+            <a class="navChild" href="mediatyper.html">Media Typer</a>
+            <a class="navChild" href="csslayouts.html">CSS Layouts</a>
+        </div>
+    </nav>
+    
+    <!-- Denne sectionen skal inni mainen. "<section class="flexbox">hei</section>"" -->
+        <main id="mainSectionLayouts">
+            <div id="mainFlex">
+                <div id="flexChild3">
+                    <h2>CSS Layouts:</h2>
+
+                    <h3>CSS Grid:</h3>
+                    <p>
+                        Den mest brukte og mest nyttige vi har er CSS Grid. Grid spesialiserer seg på hvordan man lager en fin 
+                        gridstruktur altså boxlayout i CSS. Denne strukturen tilpasser seg ulike sammenhenger og lager en fin 
+                        visuell presentasjon for personen som lager nettsiden eller den som besøker nettsiden. Ved bruk av Grid kan 
+                        du selv velge hvor du vil legge alle elementene dine. Døme på disse elementene er header, nav, main, aside og 
+                        footer som er ideelle elementer i en nettside. Når da hvert element har et område i rutenettet du har lagd, er 
+                        det ikke fare for overlapping eller kræsj av innhold nettopp på grunn av reglene Grid setter. 
+                    </p>
+
+                    <p>
+                        Man setter opp et Grid layout ved at man bruker rutenett kolonner og rutenett rader. Ved å sette et antall 
+                        grid-template-columns og grid-template rows.  Under ser man døme på hvordan en grid container fungerer. Her er 
+                        en container med 6 elementer som jeg har stilet i CSS grid. Ved å sette grid-template-columns: 1fr 1fr 1fr, vil 
+                        tre elementer i bredda bli delt opp på 0-33, 33-66, 66-99 av 100% på bredda. Eventuelt alle elementer som 
+                        kommer under vil legge seg på samme måte. Ved grid-template-rows: 100px 100px; angir vi hvor høge de 
+                        forskjellige boksene i rad 1 og 2. 
+                    </p>
+
+                    <img id="gridKode" src="kodeDøme.Png" alt="Viser kødedøme til en grid layout." > <br>
+                    <img id="gridDome1" src="gridDøme.png" alt=" Viser strukturen til et grid layout">
+
+                    <p>
+                        Eventuelt om vi tok å forandret grid-temlplate-rows til 100px 200px; ville vi fått et resultat som dette: 
+                    </p>
+
+                    <img id="gridDome2" src="gridDøme2.png" alt="Viser strukturen til et grid layout">
+
+                    <p>
+                        På bildet nedenfor kan vi se hva som skjer om vi går fra seks elementer til fem. Da vil de andre elementene 
+                        ligge akkurat som før, men blir da lagt opp riktig uten det manglende elementet. Dette er noen kort dømer 
+                        som viser hva CSS grid gjør, men også hvor effektivt det er. For å lese mer om grid 
+                        <a id="lesmer" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">Trykk her!</a>
+                    </p>
+
+                    <img id="gridDome3" src="gridDøme3.png" alt="Viser strukturen til et grid layout">
+
+                    <h3>CSS Flexbox</h3>
+                    <p> 
+                        CSS flex er en også en god måte å lage et nettsted layout på, men legger ikke like mye til rette som Grid. 
+                        Flexbox tar stilling til en endimensjonell oppsettmodell der elementer blir fordelt ved bruk av grensesnitt 
+                        og unike tilpassningsmuligheter. CSS flex er litt likt grid når det kommer til retninger. Der tar man i bruk 
+                        hovedaksen og kryssaksen og alt som blir innen flexbox, refferer til disse to aksene. 
+                        Når det kommer til hovedaksen kan man ta i bruk fire forskjellige «flex-direction» verdier som: row, 
+                        row-reverse, column og column reverse. Alle disse har forskjellige påvirkninger på elementene, og hvordan du 
+                        selv bruker disse, vil avgjøre hvordan layoutet ditt vil se ut. Kryssaksen går vinkelrett på hovedaksen og her 
+                        er det ganske vanlig å stile med eventuel flex-direction: row eller column. Primært har flexbox fire 
+                        forskjellige moduler: som er blokker for seksjoner, inline for tekst, tabell for todimensjonal tabelldata og 
+                        plassert for eksplisitt posisjon av elementet. 
+                    </p>
+                    <p>
+                        Når man stiler flex elementer har man nemlig noen viktige egenskaper man kan bruke for å forandre på 
+                        spesielle elementer innenfor flex.  Når det kommer til å flexe containers bruker vi justify content, 
+                        align items og align content . Ved flexing av barn elementer, altså flex items, bruker vi hovedsakelig 
+                        flex-grow, flex-shrink og flex-basis.  
+                    </p>
+                    <img id="flexDome" src="flexDøme.png" alt="Viser døme til hvordan flex fungerer.">
+                    <img id="flexDome2" src="flexDøme2.png" alt="">
+                </div>
+            </div>
+        </main>     
+
+    <footer id="footerSection3">
+        <p class="footerChild">danieloa@hiof.no</p>
+        <p class="footerChild">© 2018 All rights reserved </p>
+        <p class="footerChild">Daniel Otnes Austring</p>
+    </footer>
+
+    </div>
+</body>
+</html>
